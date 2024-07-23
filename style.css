@@ -1,0 +1,1390 @@
+@font-face {
+    font-family: IndieFlower;
+    src: url(fonts/IndieFlower-Regular.ttf) format(truetype);
+}
+
+@font-face {
+    font-family: Zeyada;
+    src: url(fonts/Zeyada-Regular.ttf) format(truetype);
+}
+
+@font-face {
+    font-family: PermanentMarker;
+    src: url(fonts/PermanentMarker-Regular.ttf) format(truetype);
+}
+
+@font-face {
+    font-family: Dosis;
+    src: url(fonts/Dosis-VariableFont_wght.ttf) format(truetype);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* ---------- BODY ----------- */
+
+
+body {
+    position: relative;
+    font-family: Dosis, sans-serif;
+    font-size: 1rem;
+}
+
+main {
+    position: relative;
+    padding-bottom: 3rem;
+}
+
+/* --------- HEADER ---------- */
+
+header, nav, nav > ul {
+    display: flex;
+    align-items: center; 
+}
+
+header {
+    justify-content: space-between;
+    padding: 1.25rem 2rem;
+    background-color: rgb(255, 255, 255);
+}
+
+.logo-site {
+    width: fit-content;
+    display: flex;
+    justify-content: center;
+    column-gap: 1rem;
+    align-items: flex-end;
+}
+
+.blog-lifestyle {
+    font-family: Zeyada, sans-serif;
+    font-size: 2.6rem;
+    font-weight: 600;
+    color: #d87093;
+    line-height: 1.6rem;
+}
+
+.logo {
+    display: inline-block;
+    width: 44px;
+    aspect-ratio: 1/1;
+    background-image: url(images/logo-polaroid.svg); 
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+a {
+    text-decoration: none;
+    color: initial;
+}
+
+a:visited {
+    color: initial;
+}
+
+nav {
+    width: fit-content;
+}
+
+.label-burger {
+    display: none;
+    width: 40px;
+    height: 40px;
+    background-image: url(images/menu.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    background-color: #ffffff;
+    border-radius: 0;
+    background-color: transparent;
+}
+
+ul {
+    list-style-type: none;
+}
+
+nav > ul {
+    width: 100%;
+    justify-content: space-between;
+    column-gap: 1.5rem;
+}
+
+.sport {
+    position: relative;
+    z-index: 1; /* seul le z-index permet que le menu déroulant reste une fois le survol terminé ... mais pour quoi ?! */
+}
+
+.sport ul {
+    display: flex;
+    position: absolute;
+    left: -65px;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(255, 255, 255, .7);
+    justify-content: flex-start;
+    align-items: center;
+    width: fit-content;
+    height: 0;
+    transition: height .5s;
+    overflow: hidden;
+}
+
+.sport ul li {
+    height: 42px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 165px;
+    padding: .2rem 1rem;
+    text-align: center;
+}
+
+.sport ul li:first-child {
+    padding-top: .8rem;
+}
+
+.sport ul li:last-child {
+    padding-bottom: .8rem;
+}
+
+.sport:hover ul {
+    height: 128px;
+}
+
+#research {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: .5rem;
+}
+
+#search {
+    display: none;
+}
+
+#research label {
+    display: block;
+    width: 20px;
+    height: 20px;
+    background-image: url(images/search.webp);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+#research label:hover {
+    cursor: pointer;
+}
+
+#search:checked ~ form {
+    width: 325.7px; 
+}
+
+#research form {
+    width: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: .5rem;
+    overflow: hidden;
+    transition: width .75s; 
+}
+
+#search-bar {
+    display: inline-block;
+    border: 1px solid black;
+    width: 200px;
+    padding: .25rem .5rem;
+}
+
+[type~="submit"] {
+    display: inline-block;
+    height: 25.6px;
+    padding: 0 .5rem;
+    background-color: #FFFFFF;
+}
+
+.connexion {
+    position: relative;
+}
+
+.connect-to {
+    display: block;
+    width: 20px;
+    height: 20px;
+    background-image: url(images/user.webp);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: relative;
+    /*z-index: 4;*/
+    transition: background-image .5s, transform .5s;
+}
+
+.user-account {
+    display: flex;
+    position: absolute;
+    right: -2rem;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(255, 255, 255, .7);
+    justify-content: flex-start;
+    align-items: center;
+    width: fit-content;
+    height: 0;
+    transition: height .5s;
+    overflow: hidden;
+    z-index: 1;
+}
+
+.user-account li {
+    text-align: center;
+    height: 42px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 128px;
+    padding: .2rem 1rem;
+}
+
+.user-account li:first-child {
+    padding-top: .8rem;
+}
+
+.user-account li:last-child {
+    padding-bottom: .8rem;
+}
+
+.connexion:hover .user-account {
+    height: 96px;
+}
+
+#login-connect-to > label {
+    display: block;
+}
+
+#login-connect-to > label:hover {
+    cursor: pointer;
+}
+
+#connect-to:checked + label {
+    display: block;
+    background-image: url(images/close.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 20px;
+    height: 20px;
+    transform: rotate(180deg);
+    position: fixed;
+    top: 36px;
+    right: 32px;
+    z-index: 5;
+}
+
+#connect-to:checked + label span {
+    display: none;
+}
+
+#connect-to {
+    display: none;
+}
+
+#login-connect-to section {
+    position: fixed;
+    overflow: hidden;
+    height: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #FFFFFF;
+    z-index: 3; /* A voir si z-index 3 serait mieux*/ 
+    transition: height .5s;
+    font-family: IndieFlower, sans-serif;
+    background-color: #f7dbea;
+}
+
+#login-connect-to section > div {
+    width: fit-content;
+    padding: 2rem 4rem;
+    border: 1px solid black;
+    position: relative;
+    background-color: #FFFFFF;
+}
+
+#login-connect-to section > div h2 {
+    margin-top: .5rem;
+    text-align: center;
+    font-family: 'PermanentMarker';
+    color: rgb(96, 190, 188);
+}
+
+#login-connect-to section > div::before {
+    content: '';
+    display: block;
+    width: 160px;
+    height: 40px;
+    background-color: rgb(186, 221, 214, .8);
+    position: absolute;
+    top: -20px;
+    left: 105px;
+}
+
+#connect-to:checked ~ section {
+    height: 100vh;
+}
+
+
+#login-connect-to form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#login-connect-to h2 {
+    margin-bottom: 2rem;
+}
+
+#username, #password {
+    display: block;
+    width: 240px;
+    height: 32px;
+    padding: .5rem 1rem;
+    border: 1px solid black;
+}
+
+#username {
+    margin-bottom: 1.5rem;
+}
+
+#password {
+    margin-bottom: .5rem;
+}
+
+.remember-line {
+    display: flex;
+    align-items: center;
+    column-gap: .5rem;
+    margin-bottom: 1rem;
+}
+
+.remember-line, .forgotten-password {
+    margin-bottom: 1rem;
+}
+
+#remember {
+    display: inline;
+}
+
+#login {
+    width: fit-content;
+    padding: .5rem 1rem;
+    border: 1px solid #000000;
+}
+
+
+/* -------- TITRE PRINCIPAL ---------- */
+
+.title-home {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 700px;
+    height: fit-content;
+    padding: 2rem 2rem;
+    margin: auto;
+    margin-top: 1rem;
+    width: 80%;
+    margin: auto;
+}
+
+.principal-title-home {
+    font-family: PermanentMarker, sans-serif;
+    font-size: 6rem;
+    margin-bottom: 1rem;
+    color: rgb(96, 190, 188);
+}
+
+.title-home figure {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: IndieFlower, sans-serif;
+    font-size: 1.1rem;
+    
+}
+
+.title-home figcaption {
+    align-self: flex-end;
+}
+
+
+/* -------- GARLAND OF PICTURES ------- */
+
+.garland-of-pictures {
+    margin: auto;
+    margin-top: 7.5rem; /* Si bannière : 17rem */
+    display: flex;
+    justify-content: center;
+    column-gap: 6rem;
+    row-gap: 7rem;
+    align-items: flex-start;
+    width: 80%;
+    flex-wrap: wrap;
+    position: relative;
+    padding: 0 4rem;
+}
+
+.rope {
+    display: block;
+    width: 100%;
+    height: 3px;
+    border-top: 1px solid #ac6057;
+    border-bottom: 1px solid #ac6057;
+    background-color: #b19a6f;
+    position: absolute;
+    z-index: -2;
+}
+
+.article {
+    border: 1px solid gray;
+    width: 135px;
+    height: 200px;
+    background-color: snow;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 1rem;
+    row-gap: .5rem;
+    position: relative;
+    top: 5px;
+    transition: transform .6s;
+}
+
+.article:before {
+    content: '';
+    position: absolute;
+    width: 100px;
+    aspect-ratio: 1/1;
+    background-image: url(images/pink-clip.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    top: -75px;
+}
+
+.article:hover {
+    transform: scale(1.05) translateY(6px);
+}
+
+.article h2 {
+    display: flex;
+    width: 100%;
+    height: 24px;
+    padding-right: 1rem;
+    padding-left: 1rem;
+    justify-content: center;
+    align-items: center;
+    font-size: .8rem;
+    text-align: center;
+    overflow: hidden;
+    font-family: Zeyada, sans-serif;
+    font-weight: 400;
+    font-size: 1.1rem;
+}
+
+.article-image {
+    display: block;
+    width: 110px;
+    height: 145px;
+    background-image: url(images/laptop.webp);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    border: 1px solid rgb(0, 0, 0, .2);
+}
+
+#sewing .article-image {
+    background-image: url(images/sewing.webp);
+}
+
+#running .article-image {
+    background-image: url(images/running.webp);
+}
+
+#running:before {
+    background-image: url(images/teal-clip.svg);
+}
+
+#printemps h2 {
+    white-space: nowrap;;
+}
+
+#printemps .article-image {
+    background-image: url(images/spring.webp);
+}
+
+#dance .article-image {
+    background-image: url(images/dance.webp);
+}
+
+#eclipse .article-image {
+    background-image: url(images/eclipse.webp);
+}
+
+
+/* --------- WHO I AM ----------- */
+
+.who-i-am {
+    width: 300px;
+    border: 1px solid grey;
+    padding: 1.2rem;
+    background-image: url(images/colorful-pattern.webp);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: auto;
+    margin-top: 4rem;
+    position: absolute;
+    right: 7%;
+    bottom: 220px;
+    font-family: IndieFlower, sans-serif;
+}
+
+.who-i-am::before, .who-i-am::after {
+    content: '';
+    position: absolute;
+    width: 128px;
+    height: 32px;
+    background-color: rgb(255, 192, 203, .7);
+    transform: rotate(-37deg);
+    z-index: 2;
+}
+
+.who-i-am::before {
+    top: 0px;
+    left: -41px;
+}
+
+.who-i-am::after {
+    bottom: 0px;
+    right: -41px;
+}
+
+.who-i-am section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+    background-color: #FFFFFF;
+    position: relative;
+    z-index: 1;
+}
+
+.who-i-am h2 {
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.who-i-am p {
+    line-height: 1.6rem;
+}
+
+.lines {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    row-gap: auto;
+    width: 80%;
+    height: 100%;
+    z-index: -1;
+}
+
+.lines span {
+    display: block;
+    width: 100%;
+    height: 1px;
+    background-color: rgb(217, 208, 179); 
+}
+
+
+/* --------- STYCKY NOTE --------- */
+
+.stick-note {
+    background-image: url(images/stick-note.svg);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 320px;
+    height: 320px;
+    margin: 4rem auto 0;
+    position: relative;
+    z-index: -3;
+    font-family: IndieFlower, sans-serif;
+}
+
+.stick-note::before {
+    content: '';
+    width: 128px;
+    height: 32px;
+    background-color: rgb(255, 192, 203, .7);
+    position: absolute;
+    top: 29px;
+    transform: rotate(-12deg);
+    left: 60px;
+}
+
+.stick-note p {
+    text-align: center;
+    transform: rotate(-12deg);
+    width: 64%;
+    position: relative;
+    top: -14px;
+    left: -16px;
+}
+
+.stick-note img {
+    display: block;
+    width: 14px;
+    transform: rotate(-14deg);
+}
+
+/* --------- INSTRUCTIONS ---------- */
+
+.instructions {
+    width: 300px;
+    height: auto;
+    border: 1px solid grey;
+    background-color: #fffafe;
+    padding: 2rem 3rem;
+    position: absolute;
+    left: 8%;
+    transform: rotate(-1deg);
+    font-family: IndieFlower, sans-serif;
+}
+
+.instructions::before {
+    content: '';
+    background-image: url(images/thumbtack.webp);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 50px;
+    aspect-ratio: 1/1;
+    position: absolute;
+    top: -16px;
+    left: 125px;
+}
+
+.instructions span {
+    display: block;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: .5rem;
+    font-size: 1.1rem;
+}
+
+.instructions ol {
+    margin-left: 2rem;
+    font-size: .9rem;
+}
+
+/* --------- POLAROID --------- */
+.polaroid {
+    width: 325px;
+    height: 350px;
+    background-color: #ffc0cb;
+    border-radius: 24% 25% 17% 18% / 41% 42% 14% 15% ;
+    margin: 10rem auto 0; /* 10rem */
+    position: relative;
+}
+
+input {
+    display: none;
+}
+
+.button-retractable-camera-action {
+    position: absolute;
+    width: 25px;
+    height: 40px;
+    transform: rotate(20deg);
+    border-radius: 50% 100% 100% 50%;
+    border: 1px solid transparent;
+    bottom: 70px;
+    right: 22px;
+    z-index: 1;
+}
+
+.white-square {
+    display: none;
+    width: 42px;
+    height: 55px;
+    border-radius: 25%;
+    border: 2px solid #000000;
+    background-image: url(images/iridescent-background.webp);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    bottom: 105px;
+    left: 164px;
+    z-index: 1;
+}
+
+#aperture-camera:checked ~ .white-square {
+    display: block;
+}
+
+#aperture-camera:checked ~ .shoot {
+    display: block;
+}
+
+/* -------- LAST ARTICLE ---------- */
+
+.shoot {
+    position: absolute;
+    left: 32.5px;
+    top: 110px;
+    width: 45px;
+    height: 45px;
+    border: 1px solid transparent;
+    border-radius: 100%;
+    z-index: 2;
+    display: none;
+}
+
+#take-a-picture:checked ~ .last-article {
+    animation-name: picture-appears;
+    animation-duration: 2s;
+    animation-delay: .5s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    display: flex;
+}
+
+@keyframes picture-appears {
+    
+    0% {
+        transform: translateY(0);
+    }
+
+    99% {
+        transform: translateY(-190.5px);
+        z-index: -1;
+    }
+
+    100% {
+        transform: translateY(-190.5px);
+        z-index: 0;
+    }
+}
+
+#take-a-picture:checked + .shoot {
+    border: 2px solid #d87093;
+}
+
+.last-article {
+    position: absolute;
+    border: 1px solid gray;
+    border-bottom: transparent;
+    background-color: snow;
+    width: 135px;
+    height: 190px; /*200px;*/
+    top: 0px;
+    left: 100px ;
+    z-index: -1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 1rem;
+    row-gap: .5rem;
+    display: block;
+}
+
+.last-article:hover {
+    cursor: pointer;
+    top: -16px;
+    border-bottom: 1px solid gray;
+}
+
+.last-article-image {
+    display: block;
+    width: 110px;
+    height: 145px;
+    background-image: url(images/laptop.webp);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    border: 1px solid rgb(0, 0, 0, .2);
+}
+
+#take-a-picture:checked ~ .top .flash span {
+    animation: white-light-flash .5s;
+}
+
+@keyframes white-light-flash {
+    
+    0% {
+        box-shadow: 0 0 50px 10px transparent;
+    }
+
+    1% {
+        box-shadow: 0 0 50px 10px #FFFFFF;
+    }
+
+    65% {
+        box-shadow: 0 0 50px 10px #FFFFFF;
+    }
+}
+
+.top {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 250px;
+    margin-left: 33px;
+    padding-top: 10px;
+}
+
+.camera-lens {
+    display: block;
+    background-color: rgb(249, 159, 174, .5);
+    border-radius: 5px;
+    width: 35px;
+    height: 45px;
+    position: relative;
+    right: 5px;
+    bottom: 10px;
+    align-self: flex-end;
+}
+
+.camera-lens span {
+    display: block;
+    background-color: black;
+    width: 20px;
+    height: 30px;
+    border-radius: 3px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.flash {
+    display: block;
+    width: 45px;
+    height: 90px;
+    background-color: #fbf8f3; 
+    border-radius: 90px;
+}
+
+.flash > span {
+    display: block;
+    width: 39px;
+    height: 60px;
+    background-color: #FFFFFF;
+    border: 2px solid #faebd7;
+    position: relative;
+    top: 15px;
+    left: 3px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.flash > span span {
+    display: block;
+    height: 58px;
+    width: 1px;
+    background-color: antiquewhite;
+}
+
+.light-sensor {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    width: 30px;
+    height: 50px;
+    border-radius: 20px;
+    border: 1px solid #f99fae;
+}
+
+.light-sensor span {
+    background-color: #000000;
+    border-radius: 100%;
+    border: 2px solid rgb(249, 159, 174);
+}
+
+.light-sensor span:first-child {
+    width: 15px;
+    height: 15px;
+}
+
+.light-sensor span:last-child {
+    width: 14px;
+    height: 14px;
+}
+
+.brand {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: palevioletred;
+    font-family: 'Roboto Condensed', sans-serif;
+    align-self: flex-start;
+    position: relative;
+    top: 5px;
+    right: 5px;
+}
+
+.brand span:first-child {
+    font-size: 1.2rem;
+    font-weight: 700;
+}
+
+.brand span:last-child {
+    font-size: .8rem;
+    font-weight: 600;
+}
+
+.bottom {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    margin: auto;
+    margin-top: 10px;
+    position: relative;
+}
+
+.shutter-button {
+    display: block;
+    width: 45px;
+    height: 45px;
+    border-radius: 100%;
+    border: 1px solid #000000;
+    outline: 5px solid rgb(249, 159, 174, .5);
+    position: relative;
+}
+
+.button-retractable-camera {
+    position: absolute;
+    /*background-color: #fdb6c3;*/
+    width: 25px;
+    height: 40px;
+    top: 130px;
+    left: 278px;
+    transform: rotate(20deg);
+    border-radius: 50% 100% 100% 50%;
+    border: 1px solid #000000;
+    outline: 4px solid rgb(216, 112, 147, .2);
+}
+
+
+#aperture-camera:checked ~ .bottom .button-retractable-camera { /* penser à changer le curseur*/
+    border-color: rgb(216, 112, 147);
+}
+
+#aperture-camera:checked ~ .bottom .camera .retractable-camera {
+    border: 1px solid #000000;
+}
+
+.camera {
+    width: 215px;
+    height: 215px;
+    border-radius: 100%;
+    border: 1px solid rgb(216, 112, 147, .2);
+    background-color: #fdb6c3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.retractable-camera {
+    width: 155px;
+    height: 155px;
+    border-radius: 100%;
+    border: 1px solid rgb(216, 112, 147);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.lens-cover {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80px;
+    height: 65px;
+    border-radius: 50%;
+    background-color: rgb(0, 0, 0, .7);
+    position: relative;
+}
+
+.square {
+    display: block;
+    width: 42px;
+    height: 55px;
+    border-radius: 25%;
+    border: 2px solid #000000;
+    position: relative;
+}
+
+.square span {
+    display: block;
+    width: 1px;
+    height: 59px;
+    transform: rotate(33deg);
+    background-color: #000000;
+    position: absolute;
+    left: 20px;
+    top: -3px;
+}
+
+.self-portrait-mirror {
+    display: block;
+    width: 27px;
+    height: 35px;
+    background-color: rgb(251, 248, 243);
+    border-radius: 5px;
+    position: absolute;
+    left: -30px;
+    top: 15px;
+}
+
+
+/* -------- TABLE -------- */
+
+.table {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 150px;
+    border-top: 1px solid #b19a6f;
+    background-image: url(images/wood-table.webp);
+    filter: brightness(130%);
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: -1;
+}
+
+/* ---------- COOKIE ----------- 
+
+
+#yes-cookies {
+    display: none;
+}
+
+#yes-cookies:checked + .cookie {
+    display: none;
+}
+
+.cookie {
+    width: 360px;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: .5rem;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    background-color: rgb(255, 250, 254, .8);
+    border: 1px solid #D9D9D9;
+}
+
+
+.cookie p {
+    margin-bottom: .5rem;
+}
+
+
+.cookie label {
+    display: block;
+    width: 100px;
+    background-color: rgb(96, 190, 188, .4);
+    border: 1px solid rgb(96, 190, 188);
+    border: transparent;
+    border-radius: 0;
+    padding: .25rem 1rem;
+    font-family: Dosis, sans-serif;
+    text-align: center;
+}
+
+.cookie label:first-child {
+    background-color: rgb(253, 182, 195, .4);
+}
+
+.cookie-choice {
+    width: 360px;
+    height: fit-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: .5rem;
+}
+
+.illustration-of-cookie {
+    display: block;
+    width: 360px;
+    height: 160px;
+    background-image: url(images/crossfit.webp);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+*/
+
+/* ---------- FOOTER ----------- */
+
+footer {
+    background-color: #FFFFFF;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem 2rem;
+}
+
+footer div:first-child {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: auto;
+}
+
+.logo-blog, footer > div > span, .social-networks {
+    width: 325px;
+}
+
+.logo-blog {
+    display: flex;
+    align-items: flex-end;
+    column-gap: 1rem;
+}
+
+footer div > span {
+    text-align: center;
+}
+
+.regulatory-informations {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 1rem;
+    flex-wrap: wrap;
+    margin-top: .5rem;
+}
+
+.copyright {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    background-image: url(images/copyright.webp);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin-left: .25rem;
+    margin-right: .25rem;
+}
+
+.social-networks {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    column-gap: .5rem;
+}
+
+.facebook-icon, .instagram-icon {
+    display: block;
+    aspect-ratio: 1/1;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.facebook-icon {
+    width: 24px;
+    background-image: url(images/facebook.webp);
+}
+
+.instagram-icon {
+    width: 28px;
+    background-image: url(images/instagram.webp);
+}
+
+
+@media screen and (max-width: 1300px) {
+    
+    header {
+        position: relative;
+    }
+    
+    .label-burger {
+        display: flex;
+        position: relative;
+        z-index: 4;
+    }
+
+    .label-burger:checked {
+        opacity: 0;
+    }
+
+    nav ul {
+        flex-direction: column;
+        position: absolute;
+        background-color: #ffffff;
+        z-index: 3;
+        padding-top: 0vh;
+        padding-bottom: 0vh;
+        top: 0;
+        right: 0;
+        height: 0;
+        transition: height .3s;
+        overflow: hidden;
+    }
+
+    nav ul li {
+        width: 100%;
+        padding: 8px 16px;
+        text-align: center;
+        margin-left: 0px;
+    }
+
+    nav ul li:first-child {
+       padding-top: 20vh;
+    }
+
+    nav ul li:last-child {
+        padding-bottom: 20vh;
+    }
+
+    nav {
+        width: fit-content;
+        padding: 16px 32px;
+    }
+
+    header input:checked + .label-burger {
+        background-image: url(images/close.svg);
+        background-color: transparent;
+        position: fixed;
+        top: 36px;
+        right: 64px;
+        
+    }
+
+    header input:checked ~ ul {
+        height: 100vh;
+        top: 0;
+        bottom: 0;
+        position: fixed;
+    }
+
+    .sport ul {
+        position: relative;
+        top: 0;
+        left: 0;
+        margin: auto;
+    }
+    .sport ul li {
+        font-weight: 300;
+    }
+
+    .connect-to {
+        margin: auto;
+    }
+
+    .user-account {
+        position: relative;
+        margin: auto;
+        top: 0;
+        right: 0;
+    }
+
+    .user-account li {
+        font-weight: 300;
+    }
+
+}
+
+
+@media screen and (max-width: 1200px) {
+    
+
+    .garland-of-pictures {
+        row-gap: 7rem;
+    }
+    .who-i-am, .instructions {
+        position: relative;
+    }
+
+    .who-i-am {
+        right: 0;
+        bottom: 0;
+        margin-top: 6rem;
+    }
+
+    .instructions {
+        margin: auto;
+        left: 0;
+    }
+
+    .polaroid {
+        margin-top: 14rem;
+    }
+}
+
+
+@media screen and (max-width: 700px) {
+
+    .principal-title-home {
+        font-size: 4rem;
+    }
+    
+    footer div:first-child {
+        display: flex;
+        flex-direction: column;
+        row-gap: 1rem;
+    }
+
+    .logo-blog, footer > div > span, .social-networks {
+        width: fit-content;
+    }
+
+    .who-i-am::before, .who-i-am::after {
+        transform: rotate(0deg);
+        left: 86px;
+    }
+
+    .who-i-am::before {
+        top: -16px;
+    }
+
+    .who-i-am::after {
+        bottom: -16px;
+    }
+}

@@ -1,0 +1,187 @@
+.principal-title-profil {
+    /*text-align: center;
+    margin-top: 5rem;
+    margin-bottom: 5rem;*/
+    text-align: center;
+    margin: auto;
+    margin-top: 1rem;
+    margin-bottom: 4rem;
+    padding: 0 8rem;
+    width: fit-content;
+    font-family: PermanentMarker, sans-serif;
+    font-size: 3.2rem;
+    /*border: 1px solid #D9D9D9;*/
+    color: rgb(96, 190, 188);
+    background-color: #FFFFFF;
+}
+
+.profil {
+    width: 80%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 4rem;
+    flex-wrap: wrap;
+}
+
+.profil-picture {
+    background-image: url(images/profil-settings.svg);
+    width: 400px;
+    aspect-ratio: 1/1;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    color: #fffafa;
+    margin-bottom: 4rem;
+}
+
+.profil-picture-image {
+    display: block;
+    width: 110px;
+    height: 145px;
+    background-image: url(images/photo-cv.webp);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    border: 1px solid rgb(0, 0, 0, .2);
+}
+
+.profil #firstname, 
+.profil #lastname,
+.profil #email,
+.profil #born,
+.profil #username-profil, 
+.profil #password-profil,
+.profil #description {
+    display: block;
+    width: 600px;
+    height: 32px;
+    padding: .5rem 1rem;
+    border: 1px solid black;
+}
+
+.profil #firstname, 
+.profil #lastname, 
+.profil #username-profil, 
+.profil #password-profil  {
+    width: 290px;
+}
+
+.firstname-lastname, .username-password {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 20px;
+}
+
+.profil #username-profil, .profil #password-profil {
+    margin-bottom: 0;
+}
+
+.profil #description {
+    height: 200px;
+}
+
+.profil form div {
+    width: 600px;
+}
+
+.profil form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 1rem;
+}
+
+.profil label {
+    display: block;
+    margin-bottom: .25rem;
+}
+
+
+.privacy {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    column-gap: .5rem;
+}
+
+#privacy {
+    display: block;
+    margin-top: 4px;
+} 
+
+.profil input[type~="submit"] {
+    width: fit-content;
+    height: 32px;
+    padding: .5rem 1rem;
+}
+
+@media  screen and (max-width: 800px) {
+
+    .profil-picture {
+        width: 300px;
+    }
+    
+    .profil form {
+        width: 400px;
+    }
+
+    .profil form div {
+        width: 400px;
+    }
+
+    .firstname-lastname {
+        width: 400px;
+    }
+
+    .profil #firstname, 
+    .profil #lastname, 
+    .profil #username-profil, 
+    .profil #password-profil {
+        width: 190px;
+    }
+
+    
+    .profil #email, 
+    .profil #born,  
+    .profil #description  {
+        width: 400px;
+    }
+}
+
+@media  screen and (max-width: 600px) {
+
+    h1, .principal-title-profil {
+        padding: 0 2rem 2rem;
+        font-size: 2rem;
+        margin-bottom: 1rem;
+    }
+
+    .profil-picture {
+        width: 200px;
+    }
+    
+    .profil form, .profil form div {
+        width: 300px;
+    }
+
+    .firstname-lastname {
+        width: 300px;
+    }
+
+    .profil #firstname, 
+    .profil #lastname, 
+    .profil #username-profil, 
+    .profil #password-profil {
+        width: 190px;
+        width: 140px;
+    }
+
+    .profil #email, 
+    .profil #born,  
+    .profil #description {
+        width: 300px;
+    }
+}

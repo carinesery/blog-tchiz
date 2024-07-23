@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Calque_2" data-name="Calque 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 618.87 714.47">
+  <g id="Calque_1-2" data-name="Calque 1">
+    <polygon id="Page_blanche_carnet" data-name="Page blanche carnet" points=".65 172.8 397.93 13.69 616.5 553.84 215.59 713.82 .65 172.8" style="fill: #fffafe; stroke: #000; stroke-miterlimit: 10;"/>
+    <g id="Lignes_bleues" data-name="Lignes bleues">
+      <line x1="54.39" y1="211.59" x2="383" y2="78.99" style="fill: #fffef3; stroke: #a8e3e5; stroke-miterlimit: 10;"/>
+      <line x1="66.31" y1="241.62" x2="394.91" y2="109.02" style="fill: #fffef3; stroke: #a8e3e5; stroke-miterlimit: 10;"/>
+      <line x1="78.46" y1="272.29" x2="407.06" y2="139.69" style="fill: #fffef3; stroke: #a8e3e5; stroke-miterlimit: 10;"/>
+      <line x1="90.83" y1="302.59" x2="419.43" y2="169.99" style="fill: #fffef3; stroke: #a8e3e5; stroke-miterlimit: 10;"/>
+      <line x1="103.44" y1="334.44" x2="432.04" y2="201.85" style="fill: #fffef3; stroke: #a8e3e5; stroke-miterlimit: 10;"/>
+      <line x1="115.77" y1="362.01" x2="444.37" y2="229.42" style="fill: #fffef3; stroke: #a8e3e5; stroke-miterlimit: 10;"/>
+      <line x1="127.21" y1="393.4" x2="455.81" y2="260.8" style="fill: #fffef3; stroke: #a8e3e5; stroke-miterlimit: 10;"/>
+      <line x1="139.12" y1="423.43" x2="467.73" y2="290.84" style="fill: #fffef3; stroke: #a8e3e5; stroke-miterlimit: 10;"/>
+      <line x1="151.27" y1="454.1" x2="479.87" y2="321.5" style="fill: #fffef3; stroke: #a8e3e5; stroke-miterlimit: 10;"/>
+      <line x1="163.64" y1="484.4" x2="492.24" y2="351.8" style="fill: #fffef3; stroke: #a8e3e5; stroke-miterlimit: 10;"/>
+      <line x1="176.25" y1="516.26" x2="504.85" y2="383.66" style="fill: #fffef3; stroke: #a8e3e5; stroke-miterlimit: 10;"/>
+      <line x1="188.58" y1="543.82" x2="517.18" y2="411.23" style="fill: #fffef3; stroke: #a8e3e5; stroke-miterlimit: 10;"/>
+      <line x1="199.92" y1="577.02" x2="528.53" y2="444.43" style="fill: #fffef3; stroke: #a8e3e5; stroke-miterlimit: 10;"/>
+      <line x1="211.84" y1="607.06" x2="540.44" y2="474.46" style="fill: #fffef3; stroke: #a8e3e5; stroke-miterlimit: 10;"/>
+      <line x1="223.99" y1="637.72" x2="552.59" y2="505.13" style="fill: #fffef3; stroke: #a8e3e5; stroke-miterlimit: 10;"/>
+      <line x1="236.36" y1="668.03" x2="564.96" y2="535.43" style="fill: #fffef3; stroke: #a8e3e5; stroke-miterlimit: 10;"/>
+    </g>
+    <g id="Spirale">
+      <path d="m23,189.84s-16.55-39.1-10.97-41.01,13.07,14.1,13.07,14.1" style="fill: none; stroke: #000; stroke-miterlimit: 10; stroke-width: 7px;"/>
+      <path d="m43.8,181.46s-16.55-39.1-10.97-41.01,13.07,14.1,13.07,14.1" style="fill: none; stroke: #000; stroke-miterlimit: 10; stroke-width: 7px;"/>
+      <path d="m68.16,171.74s-16.55-39.1-10.97-41.01,13.07,14.1,13.07,14.1" style="fill: none; stroke: #000; stroke-miterlimit: 10; stroke-width: 7px;"/>
+      <path d="m92.07,162.62s-16.55-39.1-10.97-41.01,13.07,14.1,13.07,14.1" style="fill: none; stroke: #000; stroke-miterlimit: 10; stroke-width: 7px;"/>
+      <path d="m114.86,153.51s-16.55-39.1-10.97-41.01,13.07,14.1,13.07,14.1" style="fill: none; stroke: #000; stroke-miterlimit: 10; stroke-width: 7px;"/>
+      <path d="m136.34,144.26s-16.55-39.1-10.97-41.01,13.07,14.1,13.07,14.1" style="fill: none; stroke: #000; stroke-miterlimit: 10; stroke-width: 7px;"/>
+      <path d="m157.14,135.88s-16.55-39.1-10.97-41.01,13.07,14.1,13.07,14.1" style="fill: none; stroke: #000; stroke-miterlimit: 10; stroke-width: 7px;"/>
+      <path d="m181.51,126.16s-16.55-39.1-10.97-41.01,13.07,14.1,13.07,14.1" style="fill: none; stroke: #000; stroke-miterlimit: 10; stroke-width: 7px;"/>
+      <path d="m205.42,117.04s-16.55-39.1-10.97-41.01,13.07,14.1,13.07,14.1" style="fill: none; stroke: #000; stroke-miterlimit: 10; stroke-width: 7px;"/>
+      <path d="m228.2,107.93s-16.55-39.1-10.97-41.01,13.07,14.1,13.07,14.1" style="fill: none; stroke: #000; stroke-miterlimit: 10; stroke-width: 7px;"/>
+      <path d="m252.74,98.68s-16.55-39.1-10.97-41.01,13.07,14.1,13.07,14.1" style="fill: none; stroke: #000; stroke-miterlimit: 10; stroke-width: 7px;"/>
+      <path d="m273.54,90.3s-16.55-39.1-10.97-41.01,13.07,14.1,13.07,14.1" style="fill: none; stroke: #000; stroke-miterlimit: 10; stroke-width: 7px;"/>
+      <path d="m297.91,80.58s-16.55-39.1-10.97-41.01,13.07,14.1,13.07,14.1" style="fill: none; stroke: #000; stroke-miterlimit: 10; stroke-width: 7px;"/>
+      <path d="m321.82,71.46s-16.55-39.1-10.97-41.01,13.07,14.1,13.07,14.1" style="fill: none; stroke: #000; stroke-miterlimit: 10; stroke-width: 7px;"/>
+      <path d="m344.6,62.35s-16.55-39.1-10.97-41.01,13.07,14.1,13.07,14.1" style="fill: none; stroke: #000; stroke-miterlimit: 10; stroke-width: 7px;"/>
+      <path d="m367.09,53.05s-16.55-39.1-10.97-41.01,13.07,14.1,13.07,14.1" style="fill: none; stroke: #000; stroke-miterlimit: 10; stroke-width: 7px;"/>
+      <path d="m387.88,44.66s-16.55-39.1-10.97-41.01,13.07,14.1,13.07,14.1" style="fill: none; stroke: #000; stroke-miterlimit: 10; stroke-width: 7px;"/>
+    </g>
+    <g id="Stylo">
+      <polygon points="575.43 341.12 607.57 351.81 525.17 599.44 493.03 588.69 575.43 341.12" style="fill: #60bebc; stroke: #000; stroke-miterlimit: 10;"/>
+      <polygon points="577.36 341.76 594.16 306.38 595.79 307.06 606.01 279.84 618.26 284.13 610.51 312.38 612.35 313.14 604.53 350.8 577.36 341.76" style="fill: #baddd6; stroke: #000; stroke-miterlimit: 10;"/>
+      <polygon points="475.04 672.32 474.23 692.66 486.26 676.26 475.04 672.32" style="stroke-width: 0px;"/>
+      <polygon points="493.03 588.69 473.87 671.91 487.29 676.62 525.17 599.44 493.03 588.69" style="fill: #baddd6; stroke: #000; stroke-miterlimit: 10;"/>
+      <line x1="595.79" y1="307.06" x2="610.51" y2="312.38" style="fill: #baddd6; stroke: #000; stroke-miterlimit: 10;"/>
+    </g>
+  </g>
+</svg>

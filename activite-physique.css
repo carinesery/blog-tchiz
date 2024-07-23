@@ -1,0 +1,135 @@
+h1 {
+    text-align: center;
+    margin: auto;
+    margin-top: 1rem;
+    margin-bottom: 4rem;
+    padding: 0 8rem;
+    width: fit-content;
+    font-family: PermanentMarker, sans-serif;
+    font-size: 3.2rem;
+    /*border: 1px solid #D9D9D9;*/
+    color: rgb(96, 190, 188);
+    background-color: #FFFFFF;
+}
+
+.big-pictures-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: auto;
+    width: 80%;
+    column-gap: 6rem;
+    row-gap: 7rem;
+    font-family: Zeyada, sans-serif;
+}
+
+.big-picture {
+    width: 300px;
+    height: 336px;
+    position: relative;
+    transform-style: preserve-3d;
+    transition: transform .5s ease-in-out;
+    position: relative;
+}
+
+.big-picture::before {
+    content: '';
+    position: absolute;
+    width: 128px;
+    height: 40px;
+    top: -20px;
+    left: 86px;
+    background-color:rgb(186, 221, 214, .8); /*rgba(218, 192, 255, 0.7)*/
+    z-index: 2;
+}
+
+.big-picture:hover {
+    transform: rotateY(180deg) ;
+}
+
+.big-picture:hover::before {
+    z-index: -2;
+    
+}
+
+.grand-article {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    flex-direction: column;
+    align-items: center;
+    background-color: snow;
+    border: 1px solid grey;
+    /*box-shadow: 0px 1px 2px 0px grey;*/
+    padding-top: 1rem;
+}
+
+.grand-article h2 {
+    width: 90%;
+    overflow: hidden;
+    height: 56px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    font-weight: 400;
+    font-size: 1.3rem;
+}
+.recto {
+    row-gap: .5rem;
+    transition: transform .6s;
+    z-index: 1; /* Face recto visible */
+    backface-visibility: hidden;
+}
+
+.verso {
+    display: flex;
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    transform: rotateY(180deg); /* Dos de la photo donc retourné */
+    font-family: Dosis, sans-serif;
+}
+
+.verso p {
+    width: 70%;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.grand-article-image {
+    display: block;
+    width: 258px;
+    height: 244px;
+    background-image: url(images/physical-activity.webp);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    border: 1px solid rgb(0, 0, 0, .2);
+}
+
+#fitness .grand-article-image {
+    background-image: url(images/fitness.webp);
+}
+
+#yoga .grand-article-image {
+    background-image: url(images/yoga.webp);
+}
+
+#crossfit .grand-article-image {
+    background-image: url(images/crossfit.webp);
+}
+
+#hiking .grand-article-image {
+    background-image: url(images/hiking.webp);
+}
+
+@media screen and (max-width: 600px) {
+
+    h1 {
+        padding: 0 2rem 2rem;
+        font-size: 2rem;
+    }
+}

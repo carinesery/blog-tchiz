@@ -1,0 +1,288 @@
+.titre-principal-article-reprendre-activite-physique {
+    text-align: center;
+    margin: auto;
+    margin-top: 2rem;
+    padding: 2rem 8rem;
+    width: fit-content;
+    font-family: PermanentMarker, sans-serif;
+    font-size: 3.2rem;
+    color: rgb(96, 190, 188);
+    background-color: #FFFFFF;
+}
+
+main {
+    padding-bottom: 0;
+}
+
+article {
+    width: 70%;
+    margin: 0 auto;
+}
+
+.principal-article {
+    padding: 2rem 6rem;
+    position: relative;
+}
+
+.date {
+    text-align: right;
+    margin-bottom: 2rem;
+}
+
+article p {
+    margin-bottom: .5rem;
+}
+
+article h2 {
+    margin-top: 3rem;
+    margin-bottom: 1rem;
+}
+
+article iframe {
+    display: block;
+    margin: 1.5rem auto 2rem;
+}
+
+iframe {
+    width: 560px; 
+    height: 315px;
+}
+
+article ul {
+    list-style-type: circle;
+    padding-left: 2rem;
+    margin-bottom: .5rem;
+}
+
+article h3 {
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+}
+
+.reviews {
+    margin: 2rem auto 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.reviews h2 {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.user-reviews {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    column-gap: 4rem;
+    row-gap: 2rem;
+    flex-wrap: wrap;
+    margin: auto;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    width: 80%;
+}
+
+.user-review {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #FFFAFE;
+    margin-bottom: 1rem;
+    width: 300px;
+    border: 1px solid black;
+    margin: 0;
+    padding: 2rem;
+}
+
+.notepad-and-form-review {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 4rem;
+    flex-wrap: wrap;
+    margin: auto;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+    width: 80%;
+}
+
+.notepad {
+    background-image: url(images/notepad.svg);
+    width: 440px;
+    aspect-ratio: 1/1;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.form-review {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 1rem;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+.firstname-lastname {
+    display: flex;
+    justify-content: center;
+    column-gap: 20px;
+}
+
+.firstname-lastname input {
+    width: 290px;
+    height: 32px;
+    padding: .5rem 1rem;
+}
+
+.email input {
+    width: 600px;
+    height: 32px;
+    padding: .5rem 1rem;
+}
+
+.form-review input {
+    display: block;
+}
+
+.post-review {
+    display: flex;
+    flex-direction: column;
+}
+
+.post-review textarea {
+    width: 600px;
+    height: 148px;
+    padding: .5rem 1rem;
+}
+
+label {
+    display: block;
+    margin-bottom: .25rem;
+}
+
+.privacy {
+    width: 600px;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+}
+
+#privacy {
+    display: flex;
+    flex-direction: row;
+    align-items: center;  
+}
+
+.privacy input {
+    margin-top: 4px;
+    margin-right: .5rem;
+}
+
+#privacy label {
+    margin-bottom: 0;
+}
+
+.form-review [type~="submit"] {
+    height: 32px;
+    padding: .5rem 1rem;
+}
+
+@media screen and (max-width: 1300px) {
+
+    .principal-article {
+        width: 80%;
+    }
+}
+
+@media screen and (max-width: 1100px) {
+
+    .principal-article {
+        padding: 2rem 4rem;
+    }
+    
+}
+
+@media screen and (max-width: 900px) {
+    
+    iframe {
+        width: 80%;
+        height: auto;
+        margin: auto;
+    }
+}
+
+@media  screen and (max-width: 800px) {
+
+    .notepad {
+        width: 400px;
+    }
+    
+    .form-contact {
+        width: 400px;
+    }
+
+    #firstname-lastname {
+        width: 400px;
+    }
+
+    #firstname, #lastname {
+        width: 190px;
+    }
+
+    .email input, .post-review textarea {
+        width: 400px;
+    }
+
+    .privacy {
+        width: 400px;
+    }
+
+}
+
+
+@media screen and (max-width: 700px) {
+
+    .principal-article {
+        padding: 2rem 2rem;
+    }
+
+}
+
+
+@media screen and (max-width: 600px) {
+
+    .titre-principal-article-reprendre-activite-physique {
+        padding: 0 2rem;
+        font-size: 2rem;
+        margin-bottom: 1rem;
+    }
+
+    .notepad {
+        width: 300px;
+    }
+    
+    .form-contact {
+        width: 300px;
+    }
+
+    #firstname-lastname {
+        width: 300px;
+    }
+
+    #firstname, #lastname {
+        width: 140px;
+    }
+
+    .email input, .post-review textarea {
+        width: 300px;
+    }
+
+    .privacy {
+        width: 300px;
+    }
+}
+
+

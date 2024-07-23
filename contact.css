@@ -1,0 +1,161 @@
+h1 {
+    text-align: center;
+    margin: auto;
+    margin-top: 2rem;
+    margin-bottom: 6rem;
+    padding: 2rem 8rem;
+    width: fit-content;
+    font-family: PermanentMarker, sans-serif;
+    font-size: 3.2rem;
+    /*border: 1px solid #D9D9D9;*/
+    color: rgb(96, 190, 188);
+    background-color: #FFFFFF;
+}
+
+.envelope-and-form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 2rem;
+    row-gap: 2rem;
+    flex-wrap: wrap;
+    margin-bottom: 2rem;
+}
+
+form input {
+    display: block;
+}
+
+.principal-title-contact {
+    text-align: center;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+}
+
+.envelope {
+    background-image: url(images/envelope.svg);
+    width: 480px;
+    aspect-ratio: 1/1;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.form-contact{
+    width: 600px;
+    margin: 2.5rem 0 0;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    row-gap: 1rem;
+}
+
+label {
+    display: block;
+    margin-bottom: .25rem;
+}
+
+.form-contact input, form textarea {
+    width: 600px;
+}
+
+.form-contact input {
+    height: 32px;
+    padding: .5rem 1rem;
+    border: 1px solid black;
+}
+
+.form-contact textarea {
+    height: 200px;
+    padding: .5rem 1rem;
+
+}
+
+#firstname-lastname {
+    display: flex;
+    width: 600px;
+    column-gap: 20px;
+}
+
+#firstname, #lastname {
+    width: 290px;
+}
+
+.message {
+    display: flex;
+    flex-direction: column;
+}
+
+#privacy-conditions {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+
+}
+
+#privacy-conditions input {
+    width: initial;
+    margin-right: .5rem;
+    margin-top: 4px;
+    height: fit-content;
+}
+
+#privacy-conditions label {
+    margin-bottom: 0;
+}
+
+input[type~="submit"] {
+    width: fit-content;
+    align-self: center;
+}
+
+@media  screen and (max-width: 800px) {
+
+    .envelope {
+        width: 400px;
+    }
+    
+    .form-contact {
+        width: 400px;
+    }
+
+    #firstname-lastname {
+        width: 400px;
+    }
+
+    #firstname, #lastname {
+        width: 190px;
+    }
+
+    .form-contact input, form textarea {
+        width: 400px;
+    }
+}
+
+@media  screen and (max-width: 600px) {
+
+    h1 {
+        padding: 0 2rem 2rem;
+        font-size: 2rem;
+    }
+
+    .envelope {
+        width: 300px;
+    }
+    
+    .form-contact {
+        width: 300px;
+    }
+
+    #firstname-lastname {
+        width: 300px;
+    }
+
+    #firstname, #lastname {
+        width: 140px;
+    }
+
+    .form-contact input, form textarea {
+        width: 300px;
+    }
+}

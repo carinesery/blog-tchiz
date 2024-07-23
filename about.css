@@ -1,0 +1,85 @@
+h1 {
+    text-align: center;
+    margin: auto;
+    margin-top: 1rem;
+    margin-bottom: 4rem;
+    padding: 0 8rem;
+    width: fit-content;
+    font-family: PermanentMarker, sans-serif;
+    font-size: 3.2rem;
+    color: rgb(96, 190, 188);
+    background-color: #FFFFFF;
+}
+
+#about {
+    width: 80%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 4rem;
+    row-gap: 4rem;
+    min-width: 740px;
+    flex-wrap: wrap;
+}
+
+.self-portrait {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: .5em;
+    justify-content: center;
+    width: 300px;
+    min-width: 300px;
+    height: 340px;
+    background-color: #FFFFFF;
+    border: 1px solid grey;
+    /*box-shadow: 0px 1px 2px 0px grey;*/
+}
+
+.self-portrait-picture {
+    display: block;
+    border: 1px solid rgb(0, 0, 0, .2);
+    width: 265px;
+    height: 265px;
+    background-image: url(images/photo-cv.webp);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+#about h2 {
+    font-family: Zeyada, sans-serif;
+    font-weight: 400;
+}
+
+#about p {
+    width: 60%;
+    margin-bottom: 2rem;
+}
+
+address {
+    font-style: normal;
+    margin: auto;
+    width: fit-content;
+}
+
+@media  screen and (max-width: 800px) {
+    
+    #about {
+        min-width: initial;
+    }
+
+    #about p {
+        width: 80%;
+    }
+}
+
+@media screen and (max-width: 600px) {
+
+    h1 {
+        padding: 0 2rem 2rem;
+        font-size: 2rem;
+        margin-bottom: 1rem;
+    }
+}

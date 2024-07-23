@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog Lifestyle</title>
+    <meta name="description" content="">
+    <link rel="stylesheet" href="style.css">
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="images/favicon/apple-touch-icon.webp">
+    <link rel="icon" type="image/webp" sizes="32x32" href="images/favicon/favicon-32x32.webp">
+    <link rel="icon" type="image/webp" sizes="16x16" href="images/favicon/favicon-16x16.webp">
+</head>
+
+<body>
+    <header>
+        <a href="index.html" class="logo-site">
+            <span class="logo"></span>
+            <span class="blog-lifestyle">Tchiz</span>
+        </a>
+        <nav>
+            <input type="checkbox" name="menu-burger" id="menu-burger">
+            <label for="menu-burger" class="label-burger"></label>
+            <ul>
+                <li><a href="index.html">Accueil</a></li>
+                <li class="sport">Sport
+                    <ul>
+                        <li><a href="activite-physique.html">Activité physique</a></li>
+                        <li>Danse</li>
+                        <li>Running</li>
+                        <li>Surf</li>
+                    </ul>
+                </li>
+                <li>Développement personnel</li>
+                <li>Coups de coeur</li>
+                <li>Articles</li>
+                <li><a href="about.html">A propos</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li id="research">
+                    <input type="checkbox" id="search">
+                    <form action="#" method="get">
+                        <input type="search" id="search-bar">
+                        <input type="submit" value="Rechercher">
+                    </form>
+                    <label for="search"></label>
+                </li>
+                <li class="connexion"><span class="connect-to"></span>
+                    <ul class="user-account">
+                        <li id="login-connect-to">
+                            <input type="checkbox" id="connect-to">
+                            <label for="connect-to"><span>Connexion</span></label>
+                            <section>
+                                <div>
+                                    <h2>Connexion</h2>
+                                    <form action="#" method="get">
+                                        <input type="text" name="username" id="username" placeholder="Identifiant"
+                                            autofocus required>
+                                        <input type="password" name="password" id="password" placeholder="Mot de passe"
+                                            required>
+                                        <div class="remember-line">
+                                            <input type="checkbox" name="remember" id="remember">
+                                            <label for="remember">Se souvenir de moi</label>
+                                        </div>
+                                        <a href="#" class="forgotten-password">Mot de passe oublié ?</a>
+                                        <a href="profil.html" id="login">Me connecter</a>
+                                    </form>
+                                </div>
+                            </section>
+                        </li>
+                        <li><a href="profil.html">Paramètres</a></li>
+                        <li><a href="new-article.html">Ecrire un article</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="title-home">
+            <h1 class="principal-title-home">Tchiz !</h1>
+            <figure>
+                <q>Nous ne nous souvenons pas des jours, nous nous souvenons des moments.</q>
+                <figcaption>Cesare Pavese</figcaption>
+            </figure>
+        </section>
+
+
+        <div class="garland-of-pictures">
+            <section class="article" id="sewing">
+                <span class="article-image"></span>
+                <h2>Atelier couture</h2>
+            </section>
+            <a href="article-reprendre-activite-physique.html" class="article" id="running">
+                <span class="article-image"></span>
+                <h2>Course à pied</h2>
+            </a>
+            <section class="article" id="printemps">
+                <span class="article-image"></span>
+                <h2>C'est le printemps !</h2>
+            </section>
+            <section class="article" id="dance">
+                <span class="article-image"></span>
+                <h2>Stage de danse</h2>
+            </section>
+            <section class="article" id="eclipse">
+                <span class="article-image"></span>
+                <h2>Eclipse de lune</h2>
+            </section>
+        </div>
+
+        <aside class="who-i-am">
+            <section>
+                <div class="lines">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <h2>A propos de l'auteur</h2>
+                <p>Bonjour et bienvenue sur mon blog ! Je m'appelle Carine, j'ai 36 ans. J'adore apprendre et partager
+                    mes découvertes. Je m'intéresse plus particulièrement au sport et au développement personnel. Vous
+                    trouverez sur ce blog des billets sur ces deux sujets et quelques autres. Bonne lecture !</p>
+            </section>
+        </aside>
+
+        <div class="stick-note">
+            <p>Pour découvrir le dernier article, c'est par ici</p>
+            <img src="images/arrow.webp" alt="Flèche pointant vers le bas">
+        </div>
+
+        <div class="instructions">
+            <span>Instructions concernant l'utilisation de l'appareil polaroid</span>
+            <p>Pour prendre une photo, suivez ces étapes :</p>
+            <ol>
+                <li>Appuyez sur le bouton en bas à droite de l'appareil afin d'ouvrir l'obturateur</li>
+                <li>Appuyez sur le bouton en haut à gauche de l'appareil pour prendre une photo</li>
+            </ol>
+        </div>
+
+        <div class="polaroid">
+            <input type="checkbox" id="aperture-camera">
+            <label class="button-retractable-camera-action" for="aperture-camera"></label>
+            <span class="white-square"></span>
+
+            <input type="checkbox" id="take-a-picture">
+            <label class="shoot" for="take-a-picture"></label>
+
+            <a href="article-reprendre-activite-physique.html" class="last-article">
+                <span class="last-article-image"></span>
+            </a>
+
+            <div class="top">
+                <span class="camera-lens">
+                    <span></span>
+                </span>
+                <span class="flash">
+                    <span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </span>
+                </span>
+                <span class="light-sensor">
+                    <span></span>
+                    <span></span>
+                </span>
+                <span class="brand">
+                    <span>csstax</span>
+                    <span>mini 2024</span>
+                </span>
+            </div>
+            <div class="bottom">
+                <span class="shutter-button"></span>
+                <span class="button-retractable-camera"></span>
+                <span class="camera">
+                    <span class="retractable-camera">
+                        <span class="lens-cover">
+                            <span class="square">
+                                <span></span>
+                            </span>
+                            <span class="self-portrait-mirror"></span>
+                        </span>
+                    </span>
+                </span>
+            </div>
+        </div>
+
+        <div class="table"></div>
+
+    </main>
+    <input type="text" id="yes-cookies">
+    
+    <!--
+    <div class="cookie">
+        <p>Envie de cookies en regardant les photos ?</p>
+        <div class="cookie-choice">
+            <label for="yes-cookies">Oui, j'ai un petit creux</label>
+            <label>Non, je n'ai pas faim</label>
+        </div>
+        <span class="illustration-of-cookie"></span>
+    </div>
+    -->
+    <footer class="footer-blog">
+        <div>
+            <a class="logo-blog" href="index.html">
+                <span class="logo"></span>
+                <span class="blog-lifestyle">Tchiz</span>
+            </a>
+            <span>Tchiz <span class="copyright"></span> Tous droits réservés | 2024</span>
+            <div class="social-networks">
+                <a class="facebook-icon" href="https://www.facebook.com/"></a>
+                <a class="instagram-icon" href="https://www.instagram.com/"></a>
+            </div>
+        </div>
+        <div class="regulatory-informations">
+            <a href="conditions-generales-d'utilisation.html">CGU</a>
+            <a href="mentions-legales.html">Mentions légales</a>
+            <a href="politique-de-confidentialite.html">Politique de confidentialité</a>
+            <a href="cookies.html">Cookies</a>
+        </div>
+    </footer>
+</body>
+
+</html>

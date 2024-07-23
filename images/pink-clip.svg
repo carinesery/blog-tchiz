@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Calque_2" data-name="Calque 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 115.07 184.8">
+  <g id="Calque_1-2" data-name="Calque 1">
+    <g id="Pince">
+      <path d="m39.81,117.76l5.5-36.25s.18-4.47-5.92-9.95c-6.1-5.48-28.24-22.51,18.21-35.97,13.98-.55,43.91,18.68,24.95,32.81-6.87,5.91-10.1,7.65-9.72,11.03.38,3.38,2.96,38.38,2.96,38.38" style="fill: none; stroke: #666363; stroke-miterlimit: 10; stroke-width: 4px;"/>
+      <g id="Punaise">
+        <line x1="58.7" y1="60.94" x2="58.7" y2="84.77" style="fill: none; stroke: #afa5a5; stroke-miterlimit: 10; stroke-width: 4px;"/>
+        <ellipse cx="58.7" cy="55.83" rx="22.47" ry="17.02" style="fill: #0e81a5; stroke-width: 0px;"/>
+        <path d="m48.83,52.43v-27.57h20.09v27.91s-3.4,6.21-10.21,6.11-9.87-3.73-9.87-6.45Z" style="fill: #0d95bf; stroke-width: 0px;"/>
+        <ellipse cx="58.87" cy="15.49" rx="20.6" ry="15.49" style="fill: #0ec0dd; stroke-width: 0px;"/>
+      </g>
+      <path d="m1.06,115.85l112.04.26c.59,0,1.06.49,1.04,1.07l-1.51,54.32s4.85.44.87,12.92c-8.53.34-22.93.37-22.93.37l-8.36-9.62-6.08,9.31-33.06-1.15-5.79-8.22-7.29,7.74-28.72.72s-2.36-11.03,1.75-13.93C2.12,164.77.32,124.18,0,116.95c-.03-.6.46-1.1,1.06-1.1Z" style="fill: #0096aa; stroke-width: 0px;"/>
+      <g>
+        <line x1="3.08" y1="120.44" x2="109.73" y2="121.97" style="fill: none; stroke: #9fcecc; stroke-miterlimit: 10; stroke-width: 2px;"/>
+        <g>
+          <line x1="2.65" y1="175.57" x2="31.11" y2="176.12" style="fill: none; stroke: #9fcecc; stroke-miterlimit: 10; stroke-width: 2px;"/>
+          <line x1="40.81" y1="176.31" x2="78.66" y2="177.04" style="fill: none; stroke: #9fcecc; stroke-miterlimit: 10; stroke-width: 2px;"/>
+          <line x1="86.56" y1="177.19" x2="111.32" y2="177.67" style="fill: none; stroke: #9fcecc; stroke-miterlimit: 10; stroke-width: 2px;"/>
+        </g>
+      </g>
+      <path d="m37.29,175.12l9.97-91s.1-4.48-6.09-9.85-28.62-22.02,17.59-36.28c13.97-.79,44.22,17.92,25.51,32.38-6.77,6.03-9.97,7.82-9.53,11.2.44,3.38,7.04,94.94,7.04,94.94" style="fill: none; stroke: #666363; stroke-miterlimit: 10; stroke-width: 4px;"/>
+    </g>
+  </g>
+</svg>

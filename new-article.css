@@ -1,0 +1,256 @@
+h1 {
+    text-align: center;
+    margin: auto;
+    margin-top: 2rem;
+    margin-bottom: 6rem;
+    padding: 2rem 8rem;
+    width: fit-content;
+    font-family: PermanentMarker, sans-serif;
+    font-size: 3.2rem;
+    /*border: 1px solid #D9D9D9;*/
+    color: rgb(96, 190, 188);
+    background-color: #FFFFFF;
+}
+
+.typewriter-and-form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 4rem;
+    row-gap: 2rem;
+    flex-wrap: wrap;
+    margin: auto;
+    margin-bottom: 2rem;
+    width: 80%;
+}
+
+form input {
+    display: block;
+}
+
+.principal-title-new-article {
+    text-align: center;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+}
+
+/*
+.typewriter {
+    background-image: url(images/envelope.svg); /* A modifier 
+    width: 480px;
+    aspect-ratio: 1/1;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+*/
+
+.calendar {
+    display: grid;
+    grid-template-columns: 320px;
+    grid-template-rows: 45px 200px 220px;
+    grid-template-areas: 
+    'title-of-calendar'
+    'picture-of-calendar'
+    'days-of-calendar';
+    border: 2px solid #000000;
+    position: relative;
+    transition: transform .5s;
+}
+
+.calendar::before {
+    content: '';
+    display: block;
+    width: 140px;
+    height: 32px;
+    background-color: rgb(186, 221, 214, .8);
+    position: absolute;
+    top: -20px;
+    left: 90px;
+}
+
+.title-of-calendar {
+    grid-area: title-of-calendar;
+    background-color: snow;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.picture-of-calendar {
+    grid-area: picture-of-calendar;
+    background-image: url(images/eclipse.webp);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.days-of-calendar {
+    grid-area: days-of-calendar;
+    background-color: snow;
+}
+
+.days-of-calendar table {
+    margin: auto;
+    width: 95%;
+    margin-top: 1rem;
+    column-gap: auto;
+}
+
+.days-of-calendar th {
+    text-transform: uppercase;
+    font-size: .7rem;
+    font-weight: 500;
+}
+
+.days-of-calendar th, .days-of-calendar td {
+    width: 42px;
+    padding-bottom: 1rem;
+}
+
+.days-of-calendar td {
+    text-align: center;
+    font-size: .8rem;
+}
+
+.calendar:hover {
+    transform: scale(1.2);
+}
+
+
+.form-new-article{
+    width: 600px;
+    margin: 2.5rem 0 0;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    row-gap: 1rem;
+}
+
+label {
+    display: block;
+    margin-bottom: .25rem;
+}
+
+.form-new-article input, form textarea {
+    width: 600px;
+}
+
+.form-new-article input {
+    height: 32px;
+    padding: .5rem 1rem;
+    border: 1px solid black;
+}
+
+.form-new-article textarea {
+    height: 200px;
+    padding: .5rem 1rem;
+
+}
+
+#author-date {
+    display: flex;
+    width: 600px;
+    column-gap: 20px;
+}
+
+#author, #date {
+    width: 290px;
+}
+
+.article-written {
+    display: flex;
+    flex-direction: column;
+}
+
+#privacy-conditions {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+
+}
+
+#privacy-conditions input {
+    width: initial;
+    margin-right: .5rem;
+    margin-top: 4px;
+    height: fit-content;
+}
+
+#privacy-conditions label {
+    margin-bottom: 0;
+}
+
+input[type~="submit"] {
+    width: fit-content;
+    align-self: center;
+}
+
+@media  screen and (max-width: 800px) {
+    
+    .form-new-article {
+        width: 400px;
+    }
+
+    #author-date {
+        width: 400px;
+    }
+
+    #author, #date {
+        width: 190px;
+    }
+
+    .form-new-article input, .form-new-article textarea {
+        width: 400px;
+    }
+
+    input[type~="submit"] {
+        width: fit-content;
+    }
+}
+
+@media  screen and (max-width: 600px) {
+
+    h1 {
+        padding: 0 2rem 2rem;
+        font-size: 2rem;
+    }
+
+    .calendar {
+        display: grid;
+        grid-template-columns: 280px;
+        grid-template-rows: 45px 200px 220px;
+    }
+
+    .days-of-calendar th {
+        font-size: .6rem;
+    }
+
+    .calendar::before {
+        width: 100px;
+    }
+
+
+    .form-new-article {
+        width: 300px;
+    }
+
+    #author-date {
+        width: 300px;
+    }
+
+    #author, #date {
+        width: 140px;
+    }
+
+    .form-new-article input, .form-new-article textarea {
+        width: 300px;
+    }
+
+    input[type~="submit"] {
+        width: fit-content;
+    }
+
+}
+
